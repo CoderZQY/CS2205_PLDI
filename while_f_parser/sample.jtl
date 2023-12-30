@@ -1,0 +1,35 @@
+0|[1-9][0-9]* {
+  var n; 
+  n = build_nat(yytext, yyleng);
+  return TM_NAT
+};
+
+[_A-Za-z][_A-Za-z0-9]* {
+  var str; 
+  str = new_str(yytext, yyleng);
+  return TM_IDENT
+};
+
+[ \t\n\r] { 
+  return TM_BLANK
+};
+
+"var" {
+  return TM_VAR
+};
+
+"while" {
+    return TM_WHILE
+};
+
+";" {
+    return TM_SEMICOL
+};
+
+"-" {
+    return TM_MINUS
+};
+
+"*" {
+    return TM_MUL
+}

@@ -1,0 +1,19 @@
+digraph DFA {
+  rankdir=LR;  // 横向布局
+
+ node [shape = circle];   // 初始状态
+
+IJL[shape = doublecircle];
+  AEG [label="State AEG\n(startState)"];
+  B [label="State B"];
+  FHIL [label="State FHIL"];
+  DHIL [label="State DHIL"];
+  IJL [label="State IJL\n(endState)"];
+
+  AEG -> B [label="i"];
+  AEG -> FHIL [label="_a-zA-Z"];
+  B -> DHIL [label="f"];
+  FHIL -> IJL [label="_0-9a-zA-Z"];
+  DHIL -> IJL [label="_0-9a-zA-Z"];
+  IJL -> IJL [label="_0-9a-zA-Z"];
+}

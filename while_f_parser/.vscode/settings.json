@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "*.tcc": "c",
+        "chrono": "c",
+        "random": "c",
+        "limits": "c",
+        "functional": "c",
+        "type_traits": "c",
+        "__hash_table": "c",
+        "algorithm": "c",
+        "atomic": "c",
+        "deque": "c",
+        "iterator": "c",
+        "locale": "c",
+        "memory": "c",
+        "string": "c",
+        "unordered_map": "c",
+        "vector": "c",
+        "typeinfo": "c"
+    }
+}

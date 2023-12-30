@@ -31,7 +31,7 @@ main: lang.o parser.o lexer.o lib.o main.o
 all: main
 
 clean:
-	rm -f lexer.h lexer.c parser.h parser.c *.o main
+	rm -f lexer.h lexer.c parser.h parser.c parser.output *.o main
 
 %.c: %.y
 
